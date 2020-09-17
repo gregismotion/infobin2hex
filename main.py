@@ -1,4 +1,5 @@
 import math
+import sys
 
 def into_reversed_chunks(l, n):
     for i in range(0, len(l), n):
@@ -6,7 +7,7 @@ def into_reversed_chunks(l, n):
         chunk.reverse()
         yield chunk
 
-input = 1848
+input = int(sys.argv[1])
 
 print("Question:")
 print(f"{input}/10 = ?/2 = ?/16")
